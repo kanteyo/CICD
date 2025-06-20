@@ -19,3 +19,7 @@ jobs:
 				test-results-pdf: test-results/results.pdf
 				test-results-simulink-test: test-results/results.mldatx
 			- name: Upload artifact
+              uses: action/upload-artifact@v4
+              with:
+                name: test-results
+                path: test-results
